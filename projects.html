@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Gourab Roy</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="Explore projects by Gourab Roy - Java Full Stack Developer. Includes web applications, Java projects, and portfolio work." />
+    <meta name="author" content="Gourab Roy" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://gourabroy.online/projects.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Projects | Gourab Roy">
+    <meta property="og:description" content="Explore real-world projects built by Gourab Roy.">
+    <meta property="og:image" content="https://gourabroy.online/assets/images/project3.png">
+    <meta property="og:url" content="https://gourabroy.online/projects.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projects | Gourab Roy">
+    <meta name="twitter:description" content="Portfolio projects of Gourab Roy - Java Developer.">
+    <meta name="twitter:image" content="https://gourabroy.online/assets/images/project3.png">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <!-- Theme fix -->
+    <style id="init-theme-style">
+      html, body {
+        transition: none !important;
+      }
+    </style>
+
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t === "light") {
+            document.documentElement.classList.add("light-mode");
+          } else {
+            document.documentElement.classList.remove("light-mode");
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/projects.css" />
+
+    <!-- ✅ Structured Data (PROJECTS BOOST SEO A LOT) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Gourab Roy",
+      "url": "https://gourabroy.online/",
+      "sameAs": [
+        "https://github.com/gourabroy8981-droid",
+        "https://www.linkedin.com/in/gourab-roy-76b706372"
+      ]
+    }
+    </script>
+
+  </head>
+
+  <body>
+
+    <script>
+      if (localStorage.getItem("theme") === "light") {
+        document.body.classList.add("light-mode");
+      }
+      window.requestAnimationFrame(function () {
+        var s = document.getElementById("init-theme-style");
+        if (s) s.remove();
+      });
+
+      (function setButtonIcon() {
+        var btn = document.getElementById("theme-toggle");
+        if (btn) {
+          btn.textContent =
+            localStorage.getItem("theme") === "light" ? "☀️" : "🌙";
+        } else {
+          setTimeout(setButtonIcon, 10);
+        }
+      })();
+    </script>
+
+    <div id="scroll-progress"></div>
+
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar">
+        <a href="https://gourabroy.online/">
+          <h2 class="logo" style="font-size: 35px; padding-top: 5px; text-decoration: none;">
+            Gourab Roy
+          </h2>
+        </a>
+
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <ul class="nav-links" id="nav-list">
+          <li><a href="https://gourabroy.online/">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="theme-item">
+            <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- PROJECTS -->
+    <section class="projects">
+      <h1>My Projects</h1>
+      <p class="projects-intro">
+        A selection of academic and personal projects demonstrating my technical skills and problem-solving abilities.
+      </p>
+
+  <div class="projects-container">
+
+    <div class="project-card">
+
+      <!-- LEFT SIDE -->
+      <div class="project-content">
+        <h2>Web-Based Quiz System</h2>
+        <p>
+          A web-based quiz application that allows users to attempt multiple-choice questions and receive instant score feedback.
+        </p>
+        <p class="tech"><strong>Tech Used:</strong> HTML5, CSS3, JavaScript, PHP</p>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="project-image">
+        <img src="assets/images/project1.jpeg" alt="Web-Based Quiz System project using JavaScript and PHP" />
+      </div>
+
+    </div>
+
+    <div class="project-card">
+
+      <div class="project-content">
+        <h2>Nexora</h2>
+        <p>
+          A connecting platform specially designed for Developers. Added features like feed, chatting, profile update and etc....
+        </p>
+        <p class="tech"><strong>Tech Used:</strong> Java, Spring Boot, React, Html, Tailwind Css</p>
+      </div>
+
+      <div class="project-image">
+        <img src="assets/images/Project2.png" alt="Nexora platform for developers" />
+      </div>
+
+    </div>
+
+    <div class="project-card">
+
+      <div class="project-content">
+        <h2>Student Management System</h2>
+        <p>
+          A console-based application developed in Java to manage student records using OOP concepts.
+        </p>
+        <p class="tech"><strong>Tech Used:</strong> Java</p>
+      </div>
+
+      <div class="project-image">
+        <img src="assets/images/project4.jpg" alt="Student Management System Java console project" />
+      </div>
+
+    </div>
+
+    <div class="project-card">
+
+      <div class="project-content">
+        <h2>My Portfolio</h2>
+        <p>
+          A responsive personal portfolio website showcasing skills and projects.
+        </p>
+        <p class="tech"><strong>Tech Used:</strong> HTML, CSS, JavaScript</p>
+      </div>
+
+      <div class="project-image">
+        <img src="assets/images/project3.png" alt="Personal portfolio website of Gourab Roy" />
+      </div>
+
+    </div>
+
+   
+
+    <div class="project-card">
+
+     <div class="project-content">
+  <h2>AI Fraud Detection System</h2>
+  <p>
+    A smart AI-powered system designed to detect fraudulent transactions in real-time.
+    It analyzes user activity and transaction patterns to identify suspicious behavior
+    and provide instant alerts for enhanced security.
+  </p>
+  <p class="tech">
+    <strong>Tech Used:</strong> Java, Spring Boot, React, HTML, Tailwind CSS
+  </p>
+</div>
+
+<div class="project-image">
+  <img src="assets/images/Project5.jpeg" alt="AI Fraud Detection System dashboard showing real-time monitoring and analytics" />
+</div>
+  </div>
+</section>
+    </section>
+
+ <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-contact">
+          <h3 class="con">Contact Me</h3>
+          <p><i class="fas fa-phone"></i> +91 9861838981</p>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:gourabroy8981@gmail.com" class="footer-mail" target="_blank">gourabroy8981@gmail.com</a>
+          </p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Bhubaneswar, Odisha, India
+          </p>
+        </div>
+
+        <div class="footer-social">
+          <h3>Follow Me</h3>
+          <a href="https://www.facebook.com/share/1CWNRqF3QG/" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/royy_gourab" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://x.com/GourabRoy9861" target="_blank"
+            ><i class="fab fa-x-twitter"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/gourab-roy-76b706372"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/gourabroy8981-droid" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+
+      <p class="footer-bottom">© 2026 Gourab Roy | Developer Portfolio</p>
+    </footer>
+
+
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

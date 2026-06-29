@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Gourab Roy</title>
+
+    <!-- SEO Meta -->
+    <meta
+      name="description"
+      content="Contact Gourab Roy - Java Full Stack Developer. Reach out for job opportunities, internships, and collaborations."
+    />
+    <meta name="author" content="Gourab Roy" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://gourabroy.online/contact.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact | Gourab Roy" />
+    <meta
+      property="og:description"
+      content="Get in touch with Gourab Roy for projects, jobs, or collaborations."
+    />
+    <meta
+      property="og:image"
+      content="https://gourabroy.online/assets/images/profile.jpg"
+    />
+    <meta property="og:url" content="https://gourabroy.online/contact.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contact | Gourab Roy" />
+    <meta
+      name="twitter:description"
+      content="Connect with Gourab Roy - Java Full Stack Developer."
+    />
+    <meta
+      name="twitter:image"
+      content="https://gourabroy.online/assets/images/profile.jpg"
+    />
+
+    <link rel="stylesheet" href="css/contact.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Theme fix -->
+    <style id="init-theme-style">
+      html,
+      body {
+        transition: none !important;
+      }
+    </style>
+
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t === "light") {
+            document.documentElement.classList.add("light-mode");
+          } else {
+            document.documentElement.classList.remove("light-mode");
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- ✅ Structured Data (VERY IMPORTANT FOR GOOGLE) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Gourab Roy",
+        "url": "https://gourabroy.online/",
+        "email": "gourabroy8981@gmail.com",
+        "sameAs": [
+          "https://github.com/gourabroy8981-droid",
+          "https://www.linkedin.com/in/gourab-roy-76b706372",
+          "https://x.com/GourabRoy9861",
+          "https://www.instagram.com/royy_gourab"
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <script>
+      if (localStorage.getItem("theme") === "light") {
+        document.body.classList.add("light-mode");
+      }
+      window.requestAnimationFrame(function () {
+        var s = document.getElementById("init-theme-style");
+        if (s) s.remove();
+      });
+
+      (function setButtonIcon() {
+        var btn = document.getElementById("theme-toggle");
+        if (btn) {
+          btn.textContent =
+            localStorage.getItem("theme") === "light" ? "☀️" : "🌙";
+        } else {
+          setTimeout(setButtonIcon, 10);
+        }
+      })();
+    </script>
+
+    <div id="scroll-progress"></div>
+
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar">
+        <a href="https://gourabroy.online/">
+          <h2 class="logo" style="font-size: 35px; padding-top: 5px">
+            Gourab Roy
+          </h2>
+        </a>
+
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <ul class="nav-links" id="nav-list">
+          <li><a href="https://gourabroy.online/">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li class="theme-item">
+            <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- REDESIGNED CONTACT SECTION -->
+    <section class="contact">
+      <span class="contact-eyebrow">Get in touch</span>
+      <h1>Contact Me</h1>
+      <p class="contact-intro">
+        Feel free to reach out for job opportunities, internships, or
+        collaboration.
+      </p>
+
+      <div class="contact-cards-container">
+        <!-- Email -->
+        <div class="contact-card">
+          <div class="card-icon-wrap">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="card-label">Email</div>
+          <h3>Drop a message</h3>
+          <div class="card-divider"></div>
+          <a href="mailto:gourabroy8981@gmail.com">gourabroy8981@gmail.com</a>
+          <span class="card-arrow">
+            Send email <i class="fas fa-arrow-right"></i>
+          </span>
+        </div>
+
+        <!-- Location -->
+        <div class="contact-card">
+          <div class="card-icon-wrap">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="card-label">Location</div>
+          <h3>Based in</h3>
+          <div class="card-divider"></div>
+          <p>Bhubaneswar, Odisha</p>
+        </div>
+
+        <!-- GitHub -->
+        <div class="contact-card">
+          <div class="card-icon-wrap">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="card-label">GitHub</div>
+          <h3>See my code</h3>
+          <div class="card-divider"></div>
+          <a
+            href="https://github.com/gourabroy8981-droid"
+            target="_blank"
+            rel="noopener noreferrer"
+            >gourabroy8981-droid</a
+          >
+          <span class="card-arrow">
+            View profile <i class="fas fa-arrow-right"></i>
+          </span>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="contact-card">
+          <div class="card-icon-wrap">
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <div class="card-label">LinkedIn</div>
+          <h3>Let's connect</h3>
+          <div class="card-divider"></div>
+          <a
+            href="https://www.linkedin.com/in/gourab-roy-76b706372"
+            target="_blank"
+            rel="noopener noreferrer"
+            >gourab-roy</a
+          >
+          <span class="card-arrow">
+            View profile <i class="fas fa-arrow-right"></i>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-contact">
+          <h3 class="con">Contact Me</h3>
+          <p><i class="fas fa-phone"></i> +91 9861838981</p>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a
+              href="mailto:gourabroy8981@gmail.com"
+              class="footer-mail"
+              target="_blank"
+              >gourabroy8981@gmail.com</a
+            >
+          </p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Bhubaneswar, Odisha, India
+          </p>
+        </div>
+
+        <div class="footer-social">
+          <h3>Follow Me</h3>
+          <a href="https://www.facebook.com/share/1CWNRqF3QG/" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/royy_gourab" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://x.com/GourabRoy9861" target="_blank"
+            ><i class="fab fa-x-twitter"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/gourab-roy-76b706372"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/gourabroy8981-droid" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+
+      <p class="footer-bottom">© 2026 Gourab Roy | Developer Portfolio</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

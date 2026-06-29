@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gourab Roy | Developer Portfolio</title>
+
+    <!-- SEO Meta -->
+    <meta
+      name="google-site-verification"
+      content="eQGSAhBdn4pGtv42yMsaO9xZ7dXFVksDkAb1cvnNXIg"
+    />
+    <meta
+      name="description"
+      content="Gourab Roy is a Java Full Stack Developer specializing in responsive web design, modern UI, and scalable applications using Java, HTML, CSS, and JavaScript."
+    />
+    <meta name="author" content="Gourab Roy" />
+    <link rel="canonical" href="https://gourabroy.online/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gourab Roy | Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="Java Full Stack Developer building modern web applications."
+    />
+    <meta property="og:image" content="assets/images/profile.jpg" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gourabroy.online/" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Gourab Roy | Developer Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Java Full Stack Developer building modern web applications."
+    />
+    <meta
+      name="twitter:image"
+      content="https://gourabroy.online/assets/images/profile.jpg"
+    />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- ✅ AOS ANIMATION LIBRARY (ADDED ONLY) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <!-- Theme fix -->
+    <style id="init-theme-style">
+      html,
+      body {
+        transition: none !important;
+      }
+    </style>
+
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t === "light") {
+            document.documentElement.classList.add("light-mode");
+          } else {
+            document.documentElement.classList.remove("light-mode");
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Gourab Roy",
+        "url": "https://gourabroy.online/",
+        "image": "https://gourabroy.online/assets/images/profile.jpg",
+        "jobTitle": "Java Full Stack Developer",
+        "sameAs": [
+          "https://www.linkedin.com/in/gourab-roy-76b706372",
+          "https://github.com/gourabroy8981-droid",
+          "https://www.instagram.com/royy_gourab",
+          "https://x.com/GourabRoy9861"
+        ]
+      }
+    </script>
+
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <script>
+      if (localStorage.getItem("theme") === "light") {
+        document.body.classList.add("light-mode");
+      }
+      window.requestAnimationFrame(function () {
+        var s = document.getElementById("init-theme-style");
+        if (s) s.remove();
+      });
+    </script>
+
+    <div id="scroll-progress"></div>
+
+    <!-- NAVBAR -->
+    <header data-aos="fade-down">
+      <nav class="navbar">
+        <a href="https://gourabroy.online/">
+          <h1 class="logo" style="font-size: 35px; padding-top: 5px">
+            Gourab Roy
+          </h1>
+        </a>
+
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <ul class="nav-links" id="nav-list">
+          <li><a href="https://gourabroy.online/" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="theme-item">
+            <button id="theme-toggle">🌙</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" data-aos="fade-up">
+      <div class="hero-content">
+        <h1 class="slide-in-h1">Hi, I'm <span>Gourab Roy</span></h1>
+        <h2>
+          Java Full Stack Developer focused on building scalable digital
+          solutions
+        </h2>
+        <p>
+          I specialize in developing robust and efficient web applications using
+          Java and modern frontend technologies. My focus is on writing clean,
+          maintainable code and delivering real-world solutions that enhance
+          user experience and performance.
+        </p>
+
+        <p style="opacity: 0.8">
+          Currently exploring Spring Boot & System Design 🚀
+        </p>
+
+        <div class="hero-buttons" style="margin-top: 30px">
+          <a href="assets/docs/Resume.pdf" class="btn primary" download>
+            Download Resume
+          </a>
+          <a href="projects.html" class="btn secondary"> View Projects </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="assets/images/profile.jpg"
+          alt="Gourab Roy Java Developer"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+    <!-- WHAT I DO -->
+    <section class="what-i-do" data-aos="fade-up">
+      <h2 style="text-align: center">What I Do</h2>
+
+      <div class="highlights">
+        <div class="highlight-card" data-aos="zoom-in">
+          <h3>💻 Frontend</h3>
+          <p>Designing clean, responsive and interactive UI experiences.</p>
+        </div>
+
+        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="100">
+          <h3>⚙️ Backend</h3>
+          <p>Building secure and scalable systems using Java & Spring Boot.</p>
+        </div>
+
+        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="200">
+          <h3>🗄 Database</h3>
+          <p>Efficient data management with optimized queries in MySQL.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="highlights" data-aos="fade-up">
+      <div class="highlight-card" data-aos="flip-left">
+        <h3>Java Expertise</h3>
+        <p>Strong knowledge of OOP, multithreading, and backend logic.</p>
+      </div>
+
+      <div class="highlight-card" data-aos="flip-left" data-aos-delay="100">
+        <h3>Modern UI</h3>
+        <p>Clean and responsive designs focused on user experience.</p>
+      </div>
+
+      <div class="highlight-card" data-aos="flip-left" data-aos-delay="200">
+        <h3>Real Projects</h3>
+        <p>Hands-on full-stack projects solving real-world problems.</p>
+      </div>
+    </section>
+
+    <!-- LEARNING -->
+    <section class="learning" data-aos="fade-up">
+      <h2 style="text-align: center">Currently Learning</h2>
+      <p style="text-align: center; max-width: 600px; margin: auto">
+        Improving my skills in Spring Boot, REST APIs and exploring how
+        large-scale applications are built and optimized.
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer data-aos="fade-up">
+      <div class="footer-container">
+        <div class="footer-contact">
+          <h3 class="con">Contact Me</h3>
+          <p><i class="fas fa-phone"></i> +91 9861838981</p>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <!-- <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=gourabroy8981@gmail.com"
+              target="_blank"
+              class="footer-mail"
+            >
+              gourabroy8981@gmail.com
+            </a> -->
+            <a
+              href="mailto:gourabroy8981@gmail.com"
+              class="footer-mail"
+              target="_blank"
+              >gourabroy8981@gmail.com</a
+            >
+          </p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Bhubaneswar, Odisha, India
+          </p>
+        </div>
+
+        <div class="footer-social">
+          <h3>Follow Me</h3>
+          <a href="https://www.facebook.com/share/1CWNRqF3QG/" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/royy_gourab" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://x.com/GourabRoy9861" target="_blank"
+            ><i class="fab fa-x-twitter"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/gourab-roy-76b706372"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/gourabroy8981-droid" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+
+      <p class="footer-bottom">© 2026 Gourab Roy | Developer Portfolio</p>
+    </footer>
+
+    <a href="https://wa.me/9861838981" class="whatsapp-float" target="_blank">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+        alt="WhatsApp Chat"
+      />
+    </a>
+
+    <!-- SCRIPTS -->
+    <script src="js/script.js"></script>
+
+    <!-- ✅ AOS INIT -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 900,
+        once: true,
+      });
+    </script>
+  </body>
+</html>
